@@ -1,6 +1,8 @@
 pipeline {
   agent any
-
+options {
+    skipDefaultCheckout true
+  }
   environment {
     IMAGE = "muhammadazfa/demo-app"
     TAG = "latest"
